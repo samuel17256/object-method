@@ -13,11 +13,15 @@ let userProfile=Object.assign(personalInfo,contactInfo)
 // console.log(userProfile)
 
 //2:printing the keys and values
-
-let keys=Object.keys(userProfile)
-// console.log(keys)
-let values=Object.values(userProfile)
-// console.log(values)
+let product={
+    product1:'melon',
+    product2:'garri',
+    product3:'sugar'
+}
+let keys=Object.keys(product)
+console.log('keys', keys)
+let values=Object.values(product)
+console.log('values', values)
 
 
 //3:creating settings
