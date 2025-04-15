@@ -1,4 +1,4 @@
-//merging two objects
+//1:merging two objects
 let personalInfo={
     firstName:'Nanbam',
     lastName:'Luka',
@@ -10,5 +10,26 @@ let contactInfo={
 }
 
 let userProfile=Object.assign(personalInfo,contactInfo)
+// console.log(userProfile)
 
-console.log(userProfile)
+//2:printing the keys and values
+
+let keys=Object.keys(userProfile)
+// console.log(keys)
+let values=Object.values(userProfile)
+// console.log(values)
+
+
+//3:creating settings
+let settings={
+    theme:'Dark',
+    notifications:true,
+}
+Object.freeze(settings)
+
+if(Object.isFrozen(settings)){
+    console.log('settings is frozen')
+}else{
+  settings.theme='white';
+}
+console.log(Object.isFrozen(settings))
